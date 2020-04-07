@@ -96,9 +96,9 @@
 
                 $("#textbox").html("");
                 $("#textbox").append("[setting] \n");
-                $("#textbox").append('OPC IP :' + $('input[name=opc_ip]').val());
-                $("#textbox").append('\nCollection IP :'+ $('input[name=Collection_ip]').val()); 
-                $("#textbox").append('\nSensor NUM : ' + $(".sensor").length);
+                $("#textbox").append('OPC IP:'+$('input[name=opc_ip]').val());
+                $("#textbox").append('\nCollection IP:'+$('input[name=Collection_ip]').val()); 
+                $("#textbox").append('\nSensor NUM:'+$(".sensor").length);
                 $(".sensor").each(function (id, i) {
                     $("#textbox").append("\n\n[sensor" + (id + 1) + "] \n");
                     $("#textbox").append('Sensor ')
@@ -107,11 +107,11 @@
  
                         if (this.name == "type") {
                              typea = $(this).val(); 
-                             type = ' type: ' + $(this).val()+',';
+                             type = ' type:'+$(this).val()+',';
                         } else if (this.name == "node") {
-                             node = ' name: ' + $(this).val()+'-'
+                             node = ' name:'+$(this).val()+'-'
                         } else if (this.name == "sensor"){
-                             ip = ' IP: ' + $(this).val();
+                             ip = ' IP:'+$(this).val();
 
                         }
                        
