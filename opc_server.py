@@ -45,7 +45,7 @@ sensor = []
 
 message = "setting"
 client_socket.sendall(message.encode())
-data = client_socket.recv(1024)
+data = client_socket.recv(8192)
 if data:
     
 
